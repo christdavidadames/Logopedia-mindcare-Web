@@ -6,18 +6,47 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- reutiliza el mismo header del index (cópialo tal cual y marca activo en esta página) -->
-  <div class="header-top"><div class="container" style="display:flex;justify-content:space-between;align-items:center;height:40px;"><div><strong>Tel:</strong> +1 (829) 905-8799 · <strong>Email:</strong> mtolentino41@uasd.edu.do</div><div class="show-md"><span class="badge">RD · Sto. Domingo</span></div></div></div>
-  <header class="header-main"><div class="container nav">
-    <a href="./"><img src="./images/inicio/logo-empresa.png" alt="Logo" class="logo" onerror="this.src='https://via.placeholder.com/160x48?text=Logo';" /></a>
-    <nav class="show-md" style="gap:.25rem;">
-      <a href="./index.html">Inicio</a>
-      <a href="./about.html" class="active">Sobre nosotros</a>
-      <span class="dropdown" id="services"><a href="#">Servicios ▾</a><span class="dropdown-menu hidden" id="servicesMenu"><a href="./services/logopedia.html">Logopedia</a><a href="./services/psicologia.html">Psicología</a></span></span>
-      <a href="./blog.html">Blog</a><a href="./contact.html">Contacto</a>
-    </nav>
-    <button id="menuBtn" class="menu-btn">☰</button>
-  </div><div id="mobilePanel" class="hidden"><div class="container" style="display:grid;gap:.5rem;"><a href="./index.html">Inicio</a><a href="./about.html">Sobre nosotros</a><a href="./services/logopedia.html">Logopedia</a><a href="./services/psicologia.html">Psicología</a><a href="./blog.html">Blog</a><a href="./contact.html">Contacto</a></div></div></header>
+  <!-- Top bar -->
+  <div class="header-top">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;height:40px;">
+      <div><strong>Tel:</strong> +1 (829) 905-8799 · <strong>Email:</strong> mtolentino41@uasd.edu.do</div>
+      <div class="show-md"><span class="badge">RD · Sto. Domingo</span></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header-main">
+    <div class="container nav">
+      <a href="./index.html">
+        <img src="./images/inicio/logo-empresa.png" alt="Logo" class="logo"
+             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+      </a>
+      <nav class="show-md" style="gap:.25rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html" class="active">Sobre nosotros</a>
+        <span class="dropdown" id="services">
+          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+          <span class="dropdown-menu hidden" id="servicesMenu">
+            <a href="./services/logopedia.html">Logopedia</a>
+            <a href="./services/psicologia.html">Psicología</a>
+          </span>
+        </span>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contacto</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+    <div id="mobilePanel" class="hidden">
+      <div class="container" style="display:grid;gap:.5rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Sobre nosotros</a>
+        <a href="./services/logopedia.html">Logopedia</a>
+        <a href="./services/psicologia.html">Psicología</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
 
   <section class="section">
     <div class="container">
@@ -66,7 +95,24 @@
     </div>
   </section>
 
-  <footer class="footer"><!-- igual que en index --><div class="container grid grid-md-2" style="gap:2rem;"><div><img src="./images/inicio/logo-empresa.png" alt="Logo" class="logo" onerror="this.src='https://via.placeholder.com/160x48?text=Logo';" /><p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p></div><div><h4>Contacto</h4><p>Calle Ejemplo #123, Santo Domingo, RD</p><p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p><hr class="soft" /><small>© <span id="y"></span> Centro Voz & Mente.</small></div></div></footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid-md-2" style="gap:2rem;">
+      <div>
+        <img src="./images/inicio/logo-empresa.png" alt="Logo" class="logo logo--footer"
+             onerror="this.src='https://via.placeholder.com/160x56?text=Logo';" />
+        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Calle Ejemplo #123, Santo Domingo, RD</p>
+        <p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p>
+        <hr class="soft" />
+        <small>© <span id="y"></span> Centro Voz & Mente.</small>
+      </div>
+    </div>
+  </footer>
+
   <script src="./script.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
