@@ -94,7 +94,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  max-height: 500px;             /* controla la altura del hero */
+  max-height: 1000px;             /* controla la altura del hero */
 }
 
 /* Pequeño empuje hacia la derecha del carrusel */
@@ -152,6 +152,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
     animation: none;
   }
 }
+
 
 
 
