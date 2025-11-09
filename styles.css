@@ -19,6 +19,9 @@ a { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .container { max-width: var(--max); margin: 0 auto; padding: 1rem; }
 
+/* 🔒 Oculta el botón de las tres rayitas (hamburguesa) */
+.menu-btn { display: none !important; }
+
 /* ------------------- TOP BAR + HEADER ------------------- */
 .header-top {
   background: var(--blue);
@@ -290,8 +293,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
-
-
-
-
-
