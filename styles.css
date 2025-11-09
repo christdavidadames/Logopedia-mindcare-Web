@@ -27,7 +27,7 @@ a:hover { text-decoration: underline; }
   background: var(--blue);
   color: #fff;
   font-size: 0.875rem;
-  margin-left: -350px;
+  margin-left: -250px;
 }
 
 .header-main {
@@ -294,6 +294,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
 
 
 
