@@ -195,7 +195,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
   height: 500px;
   max-height: none;
-  margin-left: -250px;
+  margin-left: -270px;
 }
 
 .hero-visual .logopedia-inicio {
@@ -294,6 +294,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
 
 
 
