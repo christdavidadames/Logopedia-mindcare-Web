@@ -42,6 +42,24 @@ a:hover { text-decoration: underline; }
 .nav nav { margin-left: 27rem; } /* (mantengo tu ajuste original) */
 .nav a { font-weight: 500; padding: .5rem .75rem; border-radius: .375rem; }
 
+/* 🔧 Alineación perfecta del botón "Servicios" con el resto */
+.nav a,
+.dropdown > a {
+  display: inline-flex;
+  align-items: center;     /* centra verticalmente el texto */
+  justify-content: center;
+  height: 48px;            /* misma altura para todos los botones */
+  line-height: 1;          /* evita variaciones por tipografía */
+  vertical-align: middle;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.dropdown {
+  display: inline-flex;    /* asegura el mismo comportamiento que los <a> */
+  align-items: center;
+  justify-content: center;
+}
+
 /* En el header azul, links blancos y activo/hover también blanco */
 .header-main .nav a { color: #fff; }
 .header-main .nav a.active,
