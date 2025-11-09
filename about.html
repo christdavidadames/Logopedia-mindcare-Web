@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nosotros – Logopedia Mindcare</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nosotros – Logopedia MindCare</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -18,7 +19,7 @@
   <header class="header-main">
     <div class="container nav">
       <a href="./index.html">
-        <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia Mindcare" class="logo--header"
+        <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
              onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
       </a>
       <nav class="show-md" style="gap:.25rem;">
@@ -34,7 +35,7 @@
         <a href="./blog.html">Blog</a>
         <a href="./contact.html">Contacto</a>
       </nav>
-      <button id="menuBtn" class="menu-btn">☰</button>
+      <button id="menuBtn" class="menu-btn" aria-label="Menú">☰</button>
     </div>
     <div id="mobilePanel" class="hidden">
       <div class="container" style="display:grid;gap:.5rem;">
@@ -50,7 +51,7 @@
 
   <section class="section">
     <div class="container">
-      <h1>Logopedia Mindcare</h1>
+      <h1>Logopedia MindCare</h1>
       <p class="muted">Comprometidos con el desarrollo y bienestar de nuestros pacientes a través de un cuidado excepcional.</p>
       <p>En Logopedia MindCare creemos que la mente y el lenguaje son los pilares de la conexión humana.</p>
       <p>Por eso, combinamos la logopedia y la psicología para acompañar a las personas en su desarrollo comunicativo, emocional y personal, desde una mirada científica, humana y esperanzadora.</p>
@@ -58,23 +59,53 @@
       <p>Acompañamos a niños, adolescentes y adultos con programas terapéuticos diseñados para potenciar sus habilidades, superar dificultades y reconectar con su entorno desde la confianza y la empatía.</p>
       <p>En Logopedia MindCare entendemos que comunicar también es sanar, y que cuidar la mente es cuidar la forma en que nos relacionamos con el mundo.</p>
       <p>Cada palabra, cada emoción y cada sonrisa son parte de un proceso de crecimiento integral, donde cuerpo, mente y lenguaje se armonizan para transformar vidas.</p>
-      
-      <div class="grid grid-3" style="margin:2rem 0;">
-        <div class="card"><h3>Misión</h3><p>Brindar atención integral en logopedia y psicología, promoviendo el desarrollo comunicativo, emocional y personal de niños, adolescentes y adultos.
-        Nos comprometemos a acompañar cada proceso con empatía, profesionalismo y evidencia científica, ayudando a las personas a encontrar su voz, cuidar su mente y construir bienestar desde la conexión humana.
-        </p></div>
-        <div class="card"><h3>Visión</h3><p>Ser un centro de referencia nacional e internacional en la atención logopédica y psicológica, reconocido por su excelencia profesional, su innovación terapéutica y su humanización del cuidado.
-        Aspiramos a transformar vidas fortaleciendo la comunicación, la salud mental y el equilibrio emocional como pilares del desarrollo humano.
-        </p></div>
-        <div class="card"><h3>Valores</h3><p>  
-          1.	Empatía: Escuchamos y comprendemos las historias detrás de cada voz y cada emoción.</p>
-          <p>2.	Profesionalismo: Actuamos con ética, rigor científico y compromiso con la calidad del servicio.</p>
-          <p>3.	Humanización: Ponemos a la persona en el centro de cada proceso terapéutico.</p>
-          <p>4.	Innovación: Incorporamos estrategias terapéuticas y recursos tecnológicos actualizados.</p>
-          <p>5.	Trabajo interdisciplinario: Integramos la logopedia y la psicología en un mismo camino de bienestar.</p>
-          <p>6.	Confidencialidad: Garantizamos un entorno seguro, de respeto y confianza.</p>
-          <p>7.	Esperanza: Creemos en el poder de cada palabra, emoción y pensamiento para transformar vidas.
-          </p></div>
+
+      <!-- === Misión, Visión (arriba) y Valores (abajo) === -->
+      <div class="about-grid" style="margin:2rem 0;">
+        <!-- Misión -->
+        <article class="info-block">
+          <div class="block-icon ring-blue" aria-hidden="true">
+            <img src="./images/about/Mision.png" alt="Ícono Misión" />
+          </div>
+          <h3>Misión</h3>
+          <p>
+            Brindar atención integral en logopedia y psicología, promoviendo el desarrollo
+            comunicativo, emocional y personal de niños, adolescentes y adultos. Nos comprometemos
+            a acompañar cada proceso con empatía, profesionalismo y evidencia científica, ayudando
+            a las personas a encontrar su voz, cuidar su mente y construir bienestar desde la conexión humana.
+          </p>
+        </article>
+
+        <!-- Visión -->
+        <article class="info-block">
+          <div class="block-icon ring-teal" aria-hidden="true">
+            <img src="./images/about/Vision.png" alt="Ícono Visión" />
+          </div>
+          <h3>Visión</h3>
+          <p>
+            Ser un centro de referencia nacional e internacional en la atención logopédica y psicológica,
+            reconocido por su excelencia profesional, su innovación terapéutica y su humanización del cuidado.
+            Aspiramos a transformar vidas fortaleciendo la comunicación, la salud mental y el equilibrio
+            emocional como pilares del desarrollo humano.
+          </p>
+        </article>
+
+        <!-- Valores (abajo, a todo el ancho) -->
+        <article class="info-block wide">
+          <div class="block-icon ring-yellow" aria-hidden="true">
+            <img src="./images/about/Valores.png" alt="Ícono Valores" />
+          </div>
+          <h3>Valores</h3>
+          <ul class="values-list">
+            <li><strong>Empatía:</strong> escuchamos y comprendemos las historias detrás de cada voz y emoción.</li>
+            <li><strong>Profesionalismo:</strong> ética, rigor científico y compromiso con la calidad del servicio.</li>
+            <li><strong>Humanización:</strong> la persona en el centro de cada proceso terapéutico.</li>
+            <li><strong>Innovación:</strong> estrategias terapéuticas y recursos tecnológicos actualizados.</li>
+            <li><strong>Trabajo interdisciplinario:</strong> integración de logopedia y psicología.</li>
+            <li><strong>Confidencialidad:</strong> entorno seguro, de respeto y confianza.</li>
+            <li><strong>Esperanza:</strong> el poder de cada palabra, emoción y pensamiento para transformar vidas.</li>
+          </ul>
+        </article>
       </div>
 
       <h2>Nuestro equipo</h2>
@@ -117,7 +148,7 @@
   <footer class="footer">
     <div class="container grid grid-md-2" style="gap:2rem;">
       <div>
-        <img src="./images/inicio/Logo-empresa-footer.png" alt="Logo" class="logo logo--footer"
+        <img src="./images/inicio/Logo-empresa-footer.png" alt="Logo Logopedia MindCare" class="logo logo--footer"
              onerror="this.src='https://via.placeholder.com/160x56?text=Logo';" />
         <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p>
       </div>
@@ -126,19 +157,12 @@
         <p>Calle Ejemplo #123, Santo Domingo, RD</p>
         <p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p>
         <hr class="soft" />
-        <small>© <span id="y"></span> Logopedia Mindcare. Todos los derechos reservados.</small>
+        <small>© <span id="y"></span> Logopedia MindCare. Todos los derechos reservados.</small>
       </div>
     </div>
   </footer>
 
-  <script src="./script.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="./script.js"></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
