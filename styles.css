@@ -20,26 +20,38 @@ a:hover { text-decoration: underline; }
 .container { max-width: var(--max); margin: 0 auto; padding: 1rem; }
 
 /* ------------------- ENCABEZADO ------------------- */
+/* Top bar en azul sólido (antes tenía degradado) */
 .header-top {
-  background: linear-gradient(90deg, var(--blue), var(--teal));
+  background: var(--blue);
   color: #fff;
   font-size: 0.875rem;
 }
+
+/* Header principal en azul sólido (antes era #fff) */
 .header-main {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
+  background: var(--blue);        /* <- cambio clave */
+  border-bottom: none;            /* limpio el borde claro */
   height: 90px;
   display: flex;
   align-items: center;
 }
 
+/* Navegación */
 .nav { display: flex; align-items: center; justify-content: space-between; }
-.nav nav { margin-left: 27rem; }
+.nav nav { margin-left: 27rem; } /* lo dejo igual que tu versión actual */
 .nav a { color: var(--text); font-weight: 500; padding: .5rem .75rem; border-radius: .375rem; }
 .nav a.active, .nav a:hover { color: var(--blue); }
+
+/* En el header azul, los links del menú se ven blancos y con hover menta */
+.header-main .nav a { color: #fff; }
+.header-main .nav a.active,
+.header-main .nav a:hover { 
+  color: #d1fae5;                 /* verde menta claro para destacar */
+  text-decoration: none;
+}
 
 .logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -200px }
 .logo--footer { height: 200px; width: auto; margin-right: 200px; }   /* footer */
@@ -55,10 +67,11 @@ a:hover { text-decoration: underline; }
 }
 
 /* ------------------- HERO PRINCIPAL ------------------- */
+/* Fondo del hero con degradado vertical (antes 90deg lateral) */
 .hero {
   color: #fff;
-  background: linear-gradient(90deg, var(--blue), var(--teal));
-  height: 600px;             /* 🔹 Alto del fondo del hero */
+  background: linear-gradient(180deg, var(--blue), var(--teal));  /* <- cambio clave */
+  height: 600px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -67,7 +80,7 @@ a:hover { text-decoration: underline; }
 /* Logo con eslogan */
 .logo-eslogan {
   width: 100%;
-  max-width: 800px;          /* 🔹 Tamaño del logo */
+  max-width: 800px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -106,9 +119,11 @@ a:hover { text-decoration: underline; }
 }
 .btn:hover { background:#274aa7; text-decoration:none; }
 
+/* ------------------- FOOTER ------------------- */
+/* Footer con degradado vertical (antes 90deg lateral) */
 .footer {
   color:#fff;
-  background: linear-gradient(90deg, var(--blue), var(--teal));
+  background: linear-gradient(180deg, var(--blue), var(--teal));  /* <- cambio clave */
   padding: 2rem 0;
   margin-top: 2rem;
 }
@@ -151,7 +166,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  height: 500px;               /* 🔹 Alto del carrusel */
+  height: 500px;
   max-height: none;
   margin-left: -200px;
 }
@@ -176,11 +191,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   font-weight: 700;
   line-height: 1.2;
   color: #fff;
-
-  /* tamaño de fuente responsivo */
   font-size: clamp(1.4rem, 4.2vw, 2.2rem);
-
-  /* fondo sutil para legibilidad */
   background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25));
 }
 
@@ -208,7 +219,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 /* ========== AJUSTES NUEVOS DE MENÚ Y ALINEACIÓN ========== */
 /* ========================================================= */
 
-/* Ocultar botón hamburguesa si existiera por herencia */
+/* Mantengo tu decisión de ocultar el botón hamburguesa */
 .menu-btn { display: none !important; }
 
 /* Normaliza altura y alineación de todos los items del menú */
@@ -216,7 +227,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 .dropdown > a {
   display: inline-flex;
   align-items: center;
-  height: 48px;          /* altura visual uniforme */
+  height: 48px;
   line-height: 1;
   vertical-align: middle;
 }
@@ -226,7 +237,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: inline-flex;
   align-items: center;
 }
-
-
-
-
