@@ -258,7 +258,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list {
   position: relative; /* activa desplazamiento local */
-  left: 70px;         /* mueve todo 40px a la derecha */
+  left: 120px;         /* mueve todo 40px a la derecha */
   list-style-position: inside;
   padding-left: 0;
   margin: 0;
@@ -358,6 +358,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
 
 
