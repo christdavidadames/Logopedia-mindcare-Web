@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Inicio – Logopedia MindCare</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Logopedia Mindcare</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -14,66 +15,113 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <!-- Header -->
-<header class="header-main">
+  <!-- Header / Nav -->
+  <header class="header-main">
   <div class="container nav">
     <a href="./index.html">
-      <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
+      <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia Mindcare" class="logo--header"
            onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
     </a>
+
     <nav class="show-md" style="gap:.25rem;">
-      <a href="./index.html">Inicio</a>
+      <a href="./index.html" class="active">Inicio</a>
       <a href="./about.html">Nosotros</a>
+
+      <!-- Dropdown Servicios -->
       <span class="dropdown" id="services">
-        <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+        <a href="#" id="servicesToggle" aria-haspopup="true" aria-expanded="false">Servicios ▾</a>
         <span class="dropdown-menu hidden" id="servicesMenu">
           <a href="./services/logopedia.html">Logopedia</a>
           <a href="./services/psicologia.html">Psicología</a>
         </span>
       </span>
+
       <a href="./blog.html">Blog</a>
-      <a href="./events.html">Eventos</a>
-      <a href="./multimedia.html">Multimedia</a>
       <a href="./contact.html">Contacto</a>
     </nav>
-    <button id="menuBtn" class="menu-btn">☰</button>
-  </div>
-  <div id="mobilePanel" class="hidden">
-    <div class="container" style="display:grid;gap:.5rem;">
-      <a href="./index.html">Inicio</a>
-      <a href="./about.html">Sobre nosotros</a>
-      <a href="./services/logopedia.html">Logopedia</a>
-      <a href="./services/psicologia.html">Psicología</a>
-      <a href="./blog.html">Blog</a>
-      <a href="./events.html">Eventos</a>
-      <a href="./multimedia.html">Multimedia</a>
-      <a href="./contact.html">Contacto</a>
-    </div>
   </div>
 </header>
 
-  <!-- (contenido existente de tu index: hero, carrusel, secciones, etc.) -->
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container grid grid-md-2" style="align-items:center;gap:2rem;">
+      <!-- Columna izquierda: logo con eslogan -->
+      <div class="hero-left">
+        <img
+          src="./images/inicio/logo-empresa-con-eslogan.png"
+          alt="Logo con eslogan"
+          class="logo-eslogan"
+          onerror="this.src='https://via.placeholder.com/800x300?text=Logo+con+eslogan';"
+        />
+      </div>
+
+      <!-- Columna derecha: carrusel (ligeramente desplazado a la derecha) -->
+      <div class="hero-right">
+        <div class="hero-visual hero-visual--shift is-animating">
+          <img
+            id="heroSlide"
+            src="./images/inicio/logopedia-inicio-1.jpg"
+            alt="Logopedia y psicología"
+            class="logopedia-inicio"
+          />
+          <div id="heroCaption" class="hero-caption is-animating" aria-live="polite">La vida</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section" style="background: var(--bg);">
+    <div class="container">
+      <h2>Nuestros Servicios Especializados</h2>
+      <p class="muted">Un enfoque integral para tu bienestar</p>
+      <div class="grid grid-md-2" style="margin-top:1rem;">
+        <div class="card">
+          <h3 class="badge-service">Logopedia</h3>
+          <p>Habla, lenguaje, voz y deglución con técnicas avanzadas y trato humano.</p>
+          <p><a class="btn" href="./services/logopedia.html">Saber más →</a></p>
+        </div>
+        <div class="card">
+          <h3 class="badge-service">Psicología</h3>
+          <p>Salud mental en todas las etapas: infantil, adultos, pareja y familia.</p>
+          <p><a class="btn" href="./services/psicologia.html">Saber más →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Por qué elegirnos -->
+  <section class="section">
+    <div class="container">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="grid grid-3" style="margin-top:1rem;">
+        <div class="card"><h4>Equipo Profesional</h4><p class="muted">Terapeutas certificados con amplia experiencia.</p></div>
+        <div class="card"><h4>Enfoque Personalizado</h4><p class="muted">Planes de tratamiento adaptados a cada caso.</p></div>
+        <div class="card"><h4>Ambiente Acogedor</h4><p class="muted">Instalaciones modernas y seguras.</p></div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container grid grid-md-2" style="gap:2rem;">
       <div>
-        <img src="./images/inicio/Logo-empresa-footer.png" alt="Logo" class="logo logo--footer"
+        <img src="./images/inicio/Logo-empresa-footer.png" alt="Logo Logopedia Mindcare" class="logo logo--footer"
              onerror="this.src='https://via.placeholder.com/160x56?text=Logo';" />
-        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p>
+        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional de niños y adultos.</p>
       </div>
       <div>
         <h4>Contacto</h4>
         <p>Calle Ejemplo #123, Santo Domingo, RD</p>
         <p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p>
         <hr class="soft" />
-        <small>© <span id="y"></span> Logopedia MindCare. Todos los derechos reservados.</small>
+        <small>© <span id="y"></span> Logopedia Mindcare. Todos los derechos reservados.</small>
       </div>
     </div>
   </footer>
 
   <script src="./script.js"></script>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
