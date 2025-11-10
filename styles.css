@@ -314,7 +314,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 .hero-psicologia {
   position: absolute;
   top: 100px;                  
-  left: 18%;                   
+  left: 100%;                   
   width: 800px;                
   max-width: 1000px;
   height: auto;
@@ -323,7 +323,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   border: none;
   box-shadow: none;
   pointer-events: none; /* evita clics encima */
-  margin-left: -200px;
+  margin-left: -250px;
   margin-top: -100px;
 }
 .hero-logopedia {
@@ -358,6 +358,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
 
 
