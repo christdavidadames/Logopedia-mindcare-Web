@@ -94,19 +94,21 @@ a:hover { text-decoration: underline; }
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;      
 }
 
 .logo-eslogan {
-  width: 100%;
+  position: absolute;
+  top: 120px;                  
+  left: 18%;                   
+  width: 400px;                
   max-width: 400px;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  margin: 0;                   
   border-radius: 1rem;
   border: none;
   box-shadow: none;
-  margin-left: -200px;
-  margin-top: -140px
+  pointer-events: none;        /* evita clics encima */
 }
 
 /* ------------------- GRIDS Y UTILIDADES ------------------- */
@@ -187,25 +189,26 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 /* ========== HERO ANIMADO: imagen rotando + texto ========== */
 /* ========================================================= */
 
-/* Contenedor del carrusel con altura fija: no cambia entre imágenes */
+
 .hero-visual {
   position: relative;
   width: 170%;
-  height: 500px;               /* altura fija = cero “saltos” */
+  height: 500px;               
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
   margin-left: -270px;
 }
 
-/* TODAS las imágenes del carrusel se ajustan igual */
+
 .hero-visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;           /* recorta para llenar sin deformar */
-  object-position: center;     /* centradas */
-  display: block;              /* elimina espacios fantasma */
+  display: block;
+  object-fit: cover;           
+  object-position: center;
 }
+
 
 .hero-visual .logopedia-inicio {
   width: 120%;
@@ -303,4 +306,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
-
