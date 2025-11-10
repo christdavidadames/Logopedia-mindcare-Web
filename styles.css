@@ -287,8 +287,8 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   margin: 0 auto;
 }
 .block-icon img.VisionPNG{
-  width: 10px;
-  height: 100px;
+  width: 100px !important;
+  height: auto !important;
 }
 
 /* Colores del aro */
@@ -311,3 +311,4 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
