@@ -51,12 +51,12 @@ a:hover { text-decoration: underline; }
 .header-main .nav .dropdown {
   display: inline-flex;
   align-items: center;
-  height: 10px;
+  height: 11px;
 }
 
 /* Baja un pelín todo el botón "Servicios" */
 .header-main .nav .dropdown {
-  transform: translateY(6px); /* prueba 1, 2 o 3 */
+  transform: translateY(5px); /* prueba 1, 2 o 3 */
 }
 
 /* Normaliza la altura de la línea del texto dentro del link */
@@ -361,6 +361,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
 
 
