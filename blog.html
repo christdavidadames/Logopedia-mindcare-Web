@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Blog – Logopedia MindCare</title>
+  <title>Blog – Logopedia Mindcare</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -15,60 +15,83 @@
   </div>
 
   <!-- Header -->
-  <!-- Header -->
-<header class="header-main">
-  <div class="container nav">
-    <a href="./index.html">
-      <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
-           onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
-    </a>
-    <nav class="show-md" style="gap:.25rem;">
-      <a href="./index.html">Inicio</a>
-      <a href="./about.html">Nosotros</a>
-      <span class="dropdown" id="services">
-        <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
-        <span class="dropdown-menu hidden" id="servicesMenu">
-          <a href="./services/logopedia.html">Logopedia</a>
-          <a href="./services/psicologia.html">Psicología</a>
+  <header class="header-main">
+    <div class="container nav">
+      <a href="./index.html">
+        <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia Mindcare" class="logo--header"
+             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+      </a>
+      <nav class="show-md" style="gap:.25rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Nosotros</a>
+        <span class="dropdown" id="services">
+          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+          <span class="dropdown-menu hidden" id="servicesMenu">
+            <a href="./services/logopedia.html">Logopedia</a>
+            <a href="./services/psicologia.html">Psicología</a>
+          </span>
         </span>
-      </span>
-      <a href="./blog.html">Blog</a>
-      <a href="./events.html">Eventos</a>
-      <a href="./multimedia.html">Multimedia</a>
-      <a href="./contact.html">Contacto</a>
-    </nav>
-    <button id="menuBtn" class="menu-btn">☰</button>
-  </div>
-  <div id="mobilePanel" class="hidden">
-    <div class="container" style="display:grid;gap:.5rem;">
-      <a href="./index.html">Inicio</a>
-      <a href="./about.html">Sobre nosotros</a>
-      <a href="./services/logopedia.html">Logopedia</a>
-      <a href="./services/psicologia.html">Psicología</a>
-      <a href="./blog.html">Blog</a>
-      <a href="./events.html">Eventos</a>
-      <a href="./multimedia.html">Multimedia</a>
-      <a href="./contact.html">Contacto</a>
+        <a href="./blog.html" class="active">Blog</a>
+        <a href="./contact.html">Contacto</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn" aria-label="Menú">☰</button>
     </div>
-  </div>
-</header>
+    <div id="mobilePanel" class="hidden">
+      <div class="container" style="display:grid;gap:.5rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Sobre nosotros</a>
+        <a href="./services/logopedia.html">Logopedia</a>
+        <a href="./services/psicologia.html">Psicología</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- (contenido existente de tu blog: cards/lista de posts, etc.) -->
+  <section class="section" style="background: var(--bg);">
+    <div class="container">
+      <h1>Recursos y Blog</h1>
+      <p class="muted">Artículos, consejos y recursos de nuestros especialistas.</p>
+      <div class="grid grid-3" style="margin-top:1rem;">
+        <a class="card" href="#" style="display:block;">
+          <img src="./images/blog/blog-post-1.jpg" alt="Post 1" style="width:100%;height:180px;object-fit:cover;border-radius:.75rem;"
+               onerror="this.src='https://via.placeholder.com/640x320?text=Blog';" />
+          <p class="muted" style="margin:.5rem 0 0;">15 de Julio, 2024</p>
+          <h3>5 Actividades para Estimular el Lenguaje en Casa</h3>
+          <p class="muted">Juegos y rutinas sencillas…</p>
+        </a>
+        <a class="card" href="#" style="display:block;">
+          <img src="./images/blog/blog-post-2.jpg" alt="Post 2" style="width:100%;height:180px;object-fit:cover;border-radius:.75rem;"
+               onerror="this.src='https://via.placeholder.com/640x320?text=Blog';" />
+          <p class="muted" style="margin:.5rem 0 0;">10 de Julio, 2024</p>
+          <h3>Entendiendo la Ansiedad: Estrategias para Adultos</h3>
+          <p class="muted">La ansiedad es una respuesta natural…</p>
+        </a>
+        <a class="card" href="#" style="display:block;">
+          <img src="./images/blog/blog-post-3.jpg" alt="Post 3" style="width:100%;height:180px;object-fit:cover;border-radius:.75rem;"
+               onerror="this.src='https://via.placeholder.com/640x320?text=Blog';" />
+          <p class="muted" style="margin:.5rem 0 0;">5 de Julio, 2024</p>
+          <h3>La Importancia de la Terapia Miofuncional</h3>
+          <p class="muted">La posición de la lengua puede afectar…</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container grid grid-md-2" style="gap:2rem;">
       <div>
-        <img src="./images/inicio/Logo-empresa-footer.png" alt="Logo" class="logo logo--footer"
+        <img src="./images/inicio/Logo-empresa-footer.png" alt="Centro Voz & Mente" class="logo logo--footer"
              onerror="this.src='https://via.placeholder.com/160x56?text=Logo';" />
-        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p>
+        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional de niños y adultos.</p>
       </div>
       <div>
         <h4>Contacto</h4>
         <p>Calle Ejemplo #123, Santo Domingo, RD</p>
         <p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p>
         <hr class="soft" />
-        <small>© <span id="y"></span> Logopedia MindCare. Todos los derechos reservados.</small>
+        <small>© <span id="y"></span> Logopedia Mindcare. Todos los derechos reservados.</small>
       </div>
     </div>
   </footer>
