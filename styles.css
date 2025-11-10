@@ -270,9 +270,11 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 
 .block-icon {
-  box-shadow: 0 1px 6px rgba(0,0,0,.06);
-  display: grid;
-  place-items: center;         
+  width: 130px;          
+  height: auto;           
+  margin: 0 auto 1rem;    
+  display: block;         
+  text-align: center;     
 }
 
 .block-icon img {
@@ -301,6 +303,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
 
 
 
