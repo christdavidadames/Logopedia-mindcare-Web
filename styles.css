@@ -261,7 +261,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 
 /* usamos las .card existentes como “cuadrados” */
-.info-block h3{ margin-top: .5rem; }
+.info-block h3{ margin-top: 5.5rem; }
 
 /* Valores ocupa todo el ancho y es un poco más grande */
 .card--wide {
@@ -311,6 +311,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
 
 
 
