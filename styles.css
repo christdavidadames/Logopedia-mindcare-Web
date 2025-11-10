@@ -286,7 +286,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: block;
   margin: 0 auto;
 }
-.VisionPNG{
+.block-icon img.VisionPNG{
   width: 10px;
   height: 100px;
 }
@@ -311,9 +311,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
-
-
-
-
-
-
