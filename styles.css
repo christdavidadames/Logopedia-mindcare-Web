@@ -270,18 +270,21 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 
 .block-icon {
-  width: 130px;          
-  height: auto;           
-  margin: 0 auto 1rem;    
-  display: grid;         
-  text-align: center;     
+  width: 130px;          /* cajón uniforme */
+  height: 130px;
+  margin: 0 auto 1rem;   /* centra el cajón dentro de la card */
+  display: grid;         /* centra el contenido */
+  place-items: center;   /* centro horizontal y vertical */
 }
 
 .block-icon img {
-  width: 150%;
-  height: auto;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;      /* evita el 150% heredado */
+  height: auto !important;
   object-fit: contain;
   display: block;
+  margin: 0 auto;
 }
 
 /* Colores del aro */
@@ -304,4 +307,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
 
