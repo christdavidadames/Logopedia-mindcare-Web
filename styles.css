@@ -285,7 +285,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .block-icon img {
   width: 100%;
-  height: 100%;
+  height: 150%;
   object-fit: contain;
 }
 
@@ -304,6 +304,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
 
 
 
