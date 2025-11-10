@@ -187,16 +187,17 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 /* ========== HERO ANIMADO: imagen rotando + texto ========== */
 /* ========================================================= */
 
+/* Contenedor del carrusel con altura fija: no cambia entre imágenes */
 .hero-visual {
   position: relative;
   width: 170%;
+  height: 500px;               /* altura fija = cero “saltos” */
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
-  height: 500px;
-  max-height: none;
   margin-left: -270px;
 }
+
 /* TODAS las imágenes del carrusel se ajustan igual */
 .hero-visual img {
   width: 100%;
@@ -302,3 +303,4 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
