@@ -197,6 +197,14 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   max-height: none;
   margin-left: -270px;
 }
+/* TODAS las imágenes del carrusel se ajustan igual */
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* recorta para llenar sin deformar */
+  object-position: center;     /* centradas */
+  display: block;              /* elimina espacios fantasma */
+}
 
 .hero-visual .logopedia-inicio {
   width: 120%;
@@ -294,21 +302,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
