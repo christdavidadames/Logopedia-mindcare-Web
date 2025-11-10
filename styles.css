@@ -73,7 +73,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Logo tamaños (mantengo tus valores) */
-.logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -350px }
+.logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -150px }
 .logo--footer { height: 200px; width: auto; margin-right: 200px; }
 
 .badge {
@@ -312,19 +312,19 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   border-radius: 0.5rem;     
 }
 .hero-psicologia {
-  position: absolute;
-  top: 100px;                  
-  left: 18%;                   
-  width: 200px;                
-  max-width: 200px;
-  height: auto;
-  margin: 0;                   
-  border-radius: 1rem;
-  border: none;
-  box-shadow: none;
-  pointer-events: none; /* evita clics encima */
-  margin-left: -600px;
-  margin-top: -100px;
+  position: absolute !important;
+  top: 100px !important;                  
+  left: 18% !important;                   
+  width: 200px !important;                
+  max-width: 200px !important;
+  height: auto !important;
+  margin: 0 !important;                   
+  border-radius: 1rem !important;
+  border: none !important;
+  box-shadow: none !important;
+  pointer-events: none !important; /* evita clics encima */
+  margin-left: -600px !important;
+  margin-top: -100px !important;
 }
 .hero-logopedia {
   position: absolute;
@@ -358,4 +358,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
