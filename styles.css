@@ -284,7 +284,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   overflow: hidden;           /* recorta imagen en círculo */
 }
 .block-icon img {
-  width: 148%;
+  width: 150%;
   height: 100%;
   object-fit: contain;
 }
@@ -304,6 +304,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
 
 
 
