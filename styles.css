@@ -315,7 +315,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   position: absolute;
   top: 0;
   left: 0;
-  width: 130%;
+  width: 110%;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -355,6 +355,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
 
 
