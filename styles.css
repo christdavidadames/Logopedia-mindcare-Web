@@ -315,16 +315,12 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 180%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 0;
   z-index: 0;          /* queda detrás del texto */
-}
-.hero .container {
-  position: relative;
-  z-index: 1;          /* asegura que el texto quede por encima */
 }
 
 .hero-logopedia {
@@ -359,4 +355,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
