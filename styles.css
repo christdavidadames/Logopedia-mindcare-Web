@@ -269,6 +269,18 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding: 1.5rem;             /* un poco más amplio */
 }
 
+.block-icon {
+  --ring-color: var(--blue);
+  width: 130px;
+  height: 130px;
+  margin: 0 auto .75rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--ring-color);
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+  display: grid;
+  place-items: center;         
+}
 
 .block-icon img {
   width: 150%;
@@ -296,5 +308,6 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
 
 
