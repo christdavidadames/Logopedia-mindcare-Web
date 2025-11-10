@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contacto – Logopedia MindCare</title>
+  <title>Contacto y Citas – Logopedia MindCare</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
@@ -15,45 +15,85 @@
   </div>
 
   <!-- Header -->
-  <!-- Header -->
-<header class="header-main">
-  <div class="container nav">
-    <a href="./index.html">
-      <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
-           onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
-    </a>
-    <nav class="show-md" style="gap:.25rem;">
-      <a href="./index.html">Inicio</a>
-      <a href="./about.html">Nosotros</a>
-      <span class="dropdown" id="services">
-        <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
-        <span class="dropdown-menu hidden" id="servicesMenu">
-          <a href="./services/logopedia.html">Logopedia</a>
-          <a href="./services/psicologia.html">Psicología</a>
+  <header class="header-main">
+    <div class="container nav">
+      <a href="./index.html">
+        <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
+             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+      </a>
+      <nav class="show-md" style="gap:.25rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Nosotros</a>
+        <span class="dropdown" id="services">
+          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+          <span class="dropdown-menu hidden" id="servicesMenu">
+            <a href="./services/logopedia.html">Logopedia</a>
+            <a href="./services/psicologia.html">Psicología</a>
+          </span>
         </span>
-      </span>
-      <a href="./blog.html">Blog</a>
-      <a href="./events.html">Eventos</a>
-      <a href="./multimedia.html">Multimedia</a>
-      <a href="./contact.html">Contacto</a>
-    </nav>
-    <button id="menuBtn" class="menu-btn">☰</button>
-  </div>
-  <div id="mobilePanel" class="hidden">
-    <div class="container" style="display:grid;gap:.5rem;">
-      <a href="./index.html">Inicio</a>
-      <a href="./about.html">Sobre nosotros</a>
-      <a href="./services/logopedia.html">Logopedia</a>
-      <a href="./services/psicologia.html">Psicología</a>
-      <a href="./blog.html">Blog</a>
-      <a href="./events.html">Eventos</a>
-      <a href="./multimedia.html">Multimedia</a>
-      <a href="./contact.html">Contacto</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html" class="active">Contacto</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn">☰</button>
     </div>
-  </div>
-</header>
+    <div id="mobilePanel" class="hidden">
+      <div class="container" style="display:grid;gap:.5rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Nosotros</a>
+        <a href="./services/logopedia.html">Logopedia</a>
+        <a href="./services/psicologia.html">Psicología</a>
+        <a href="./blog.html">Blog</a>
+        <a href="../events.html">Eventos</a>
+        <a href="../multimedia.html">Multimedia</a>
+        <a href="./contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- (contenido existente de tu contact: formulario, mapa o info de contacto) -->
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container" style="text-align:center;">
+      <img src="./images/contacto/hero-contacto.jpg" alt="Contacto"
+           class="hero-image hero-image--tall"
+           onerror="this.src='https://via.placeholder.com/1600x500?text=Contacto';" />
+      <h1 style="margin-top:1rem;">Contacto y Citas</h1>
+      <p class="muted" style="color:#e5e7eb;">Estamos aquí para ayudarte.</p>
+    </div>
+  </section>
+
+  <!-- Información -->
+  <section class="section">
+    <div class="container grid grid-md-2" style="gap:2rem;">
+      <div class="card">
+        <h3>Información de contacto</h3>
+        <p class="muted">Escríbenos o llámanos para agendar tu primera cita.</p>
+        <ul style="list-style:none;padding:0;margin:1rem 0;display:grid;gap:.5rem;">
+          <li><strong>Dirección:</strong> Calle Ejemplo #123, Santo Domingo, RD</li>
+          <li><strong>Tel:</strong> <a href="tel:+18299058799">+1 (829) 905-8799</a></li>
+          <li><strong>Email:</strong> <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Horario de atención</h3>
+        <ul style="list-style:none;padding:0;margin:1rem 0;display:grid;gap:.5rem;">
+          <li>Lunes a Viernes: 9:00 – 18:00</li>
+          <li>Sábados: 9:00 – 13:00</li>
+        </ul>
+        <hr class="soft" />
+        <p class="muted">Atención segura y confidencial.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp CTA -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <h2>¿Tienes alguna pregunta?</h2>
+      <p class="muted">Contáctanos directamente por WhatsApp para una respuesta más rápida.</p>
+      <a href="https://wa.me/18299058799?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20cita."
+         class="btn">Chatea con nosotros en WhatsApp</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
