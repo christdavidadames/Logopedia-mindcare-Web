@@ -101,10 +101,9 @@ a:hover { text-decoration: underline; }
 }
 
 .logo-eslogan {
-  position: absolute;
-  top: 0;                  
+  position: absolute;                 
   left: 18%;                   
-  width: 550px;                
+  width: 500px;                
   max-width: 600px;
   height: auto;
   margin: 0;                   
@@ -378,6 +377,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   background-color: #0b5e5a; /* color más oscuro al pasar el mouse */
   transform: scale(1.05);    /* efecto de “crecer” un poco */
 }
+
 
 
 
