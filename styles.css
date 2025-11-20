@@ -36,7 +36,7 @@ a:hover { text-decoration: underline; }
   z-index: 10;
   background: #fff;
   border-bottom: none;
-  height: 100px;
+  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -71,12 +71,12 @@ a:hover { text-decoration: underline; }
 .header-main .nav a { color: var(--blue); }
 .header-main .nav a.active,
 .header-main .nav a:hover { 
-  color: #fff; 
+  color: var(--blue); 
   text-decoration: underline;
 }
 
 /* Logo tamaños (mantengo tus valores) */
-.logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -150px }
+.logo--header { height: 200px; width: auto; flex-shrink: 0; margin-left: -150px }
 .logo--footer { height: 200px; width: auto; margin-right: 200px; }
 
 .badge {
@@ -378,6 +378,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   background-color: #0b5e5a; /* color más oscuro al pasar el mouse */
   transform: scale(1.05);    /* efecto de “crecer” un poco */
 }
+
 
 
 
