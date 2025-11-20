@@ -365,7 +365,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 /* ===== Botón verde menta del menú ===== */
 .btn-cita {
   background-color: #6BCBB8; /* color verde menta */
-  color: #fff !important;        /* texto blanco */
+  color: var(--blue) !important;        /* texto blanco */
   font-weight: 600;              /* texto más grueso */
   padding: .6rem 1rem;           /* tamaño del botón */
   border-radius: .5rem;          /* bordes redondeados */
@@ -378,3 +378,4 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   background-color: #0b5e5a; /* color más oscuro al pasar el mouse */
   transform: scale(1.05);    /* efecto de “crecer” un poco */
 }
+
